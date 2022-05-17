@@ -6,18 +6,23 @@ const Viewbook = () => {
         {
         "title":"wings of fire",
         "price":"120",
-        "author":"APJ"
+        "author":"APJ",
+        "image":"https://www.teahub.io/photos/full/17-173844_hd-wallpapers-of-books.jpg"
         
     },
     {
         "title":"wings",
         "price":"170",
-        "author":"BB"
+        "author":"BB",
+        "image":"https://wallpaperaccess.com/full/124378.jpg"
+       
     },
     {
         "title":"xyz",
         "price":"100",
-        "author":"AA"
+        "author":"AA",
+        "image":"https://hdwallpaperim.com/wp-content/uploads/2017/08/27/138631-macro-books-748x421.jpg"
+
     }
 ]
   return (
@@ -31,7 +36,7 @@ const Viewbook = () => {
                     {booklist.map((value,key)=>{
 return <div className='col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
     <div class="card" >
-  <img src="" class="card-img-top" alt="..."/>
+  <img src={value.image} class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">BOOK TITLE:{value.title}</h5>
     <p class="card-text">AUTHOR:{value.author}</p>
